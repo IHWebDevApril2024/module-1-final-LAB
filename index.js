@@ -41,7 +41,11 @@ const workers = [
 
 const containerElement = document.querySelector("#cards-container");
 
-workers.forEach((worker) => {
+workers.forEach((worker, index) => {
+  // Iteration 6: add the worker id
+  worker.id = index + 1;
+
+  // Iteration 5: create the cards
   const cardElement = document.createElement("div");
   cardElement.classList.add("card");
 
@@ -63,6 +67,16 @@ workers.forEach((worker) => {
   cardElement.appendChild(nameElement);
   cardElement.appendChild(positionElement);
   cardElement.appendChild(emailElement);
+
+  // Iteration 7 Details button:
+  const detailsButton = document.createElement("button");
+  // add the anchor tag to the button
+  const anchorElement = document.createElement("a");
+  anchorElement.href = `./${worker.id}.html`;
+  anchorElement.textContent = "Details";
+  detailsButton.appendChild(anchorElement);
+  cardElement.appendChild(detailsButton);
+  detailsButton.classList.add("details-button");
 
   containerElement.appendChild(cardElement);
 });

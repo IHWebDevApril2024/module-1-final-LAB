@@ -40,3 +40,20 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
+
+a {
+  text-decoration: none;
+}
+
+.details-button {
+  background-color: #393939;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+
+  a {
+    color: white;
+  }
+}
