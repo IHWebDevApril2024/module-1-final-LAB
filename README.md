@@ -104,7 +104,8 @@ This iteration is to make you suffer a little bit more. 😈
 That's not something we have practiced yet, try to do your approach first and look for documentation if you get stuck.
 You can check a possible solution by taking a look at the solution branch on the github repository. 
 Remember that solution is just one of many possible solutions. And also using the knowledge we have so far 💪
-Each card should have a button that takes us to a **new page** with only the information of that worker. 
+Each card should have a button that takes us to a **new page** (new html file) with only the information of that worker. 
+That doesn't mean you have to create a new html file with javascript. You can create a new html file and add the necessary JS to it. Feel free to create new JS/CSS files if you need to.
 
 Do you remember how to link to a new page?
 ```html
