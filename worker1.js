@@ -1,6 +1,3 @@
-console.log('JS working!');
-
-// Your code goes here
 const workers = [
     {
         "name": "Michael Scott",
@@ -33,57 +30,13 @@ const workers = [
         "photo": "https://comicvine.gamespot.com/a/uploads/scale_medium/6/66303/4469088-tumblr_inline_n0aleph3fl1r8rr6o.jpg"
     }
 ]
-//console.log(workers[0]);
-//console.log(workers[1]);
-//console.log(workers[2]);
-//console.log(workers[3]);
-//console.log(workers[4]);
 
 const container = document.createElement("div");
-
-workers.forEach((worker, index) => {
-    worker;
-
+workers.forEach(worker => {
     const card = document.createElement("div");
-    const button = document.createElement("button");
-    button.innerHTML = "See details";
-
-
-    button.addEventListener("click", () => {
-        window.location.href("./worker1.html")
-    })
-
-    card.classList.add("card");
-
-
-
-
-    const workerName = document.createElement("h2");
-    const workerPosition = document.createElement("h3");
-    const workerEmail = document.createElement("a");
-    workerEmail.href = worker.email;
-    const workerImage = document.createElement("img");
-    workerImage.src = worker.photo
-    card.appendChild(workerImage);
-    card.appendChild(workerName);
-    card.appendChild(workerPosition);
-    card.appendChild(workerEmail);
-    card.appendChild(button);
-    workerName.innerHTML = worker.name;
-    workerPosition.innerHTML = worker.position;
-    workerEmail.textContent = worker.email;
-    workerImage.innerHTML = worker.photo;
-
     container.appendChild(card);
-    worker.id = index + 1;
-    const workerId = document.createElement("h2");
-    workerId.textContent = `ID: ${worker.id}`
-    card.appendChild(workerId);
+    card.textContent = workers[0];
+    
+})
 
-});
 document.body.appendChild(container);
-
-
-
-
-
